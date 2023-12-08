@@ -1,0 +1,15 @@
+((synopsis "Automatically generate bindings from C/C++ declarations")
+ (category ffi)
+ (license "public domain")
+ (dependencies silex matchable coops srfi-1 regex)
+ (test-dependencies test)
+ (author "[[felix winkelmann]]")
+ (components
+   (host
+     (extension bind (component-dependencies bind-translator))
+     (extension bind-translator (component-dependencies grammar))
+     (generated-source-file grammar 
+                            (source "c.l.scm")
+                            (custom-build "gen-lexer"))
+     (extension cplusplus-object)
+     (program chicken-bind (component-dependencies bind-translator)))))
