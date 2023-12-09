@@ -66,3 +66,10 @@ Dependencies so far:
 
 
 Need to create a nice build system for making bind
+
+
+## Build System
+
+Prefer to use podman instead of docker. Use distrobox for WSL like experience. Distrobox because it's painless way to install drivers. Especially for AMD gpus on steamdeck.
+
+But probably have to do native on mac because nothing comes close. Don't wanna use QEMU and stuff. In that case, let's just use a build directory and build stuff and install into it. Can then add build into system paths etc. Kinda like anaconda.
