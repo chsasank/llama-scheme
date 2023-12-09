@@ -1,14 +1,21 @@
 # llama-scheme
 Scheme dialect that wraps ggml/llama library.
 
-## How to store libs
+## Installation
+
+```
+git clone git@github.com:chsasank/llama-scheme.git
+cd llama-scheme
+```
+
+## How to add dependent libs
 
 We'll save dependencies using squashed subtree - so that source lives completely in our repo. This is monorepo.
 
 Example on how to add a lib, chicken scheme:
 
 ```bash
-$ git subtree add --prefix libs/chicken-scheme https://github.com/alaricsp/chicken-scheme.git master --squash
+$ git subtree add --prefix libs/chicken-scheme https://code.call-cc.org/git/chicken-core.git 5.3.0 --squash
 
 $ git status
 On branch main
