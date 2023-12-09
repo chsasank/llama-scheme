@@ -58,3 +58,11 @@ remote: Resolving deltas: 100% (30/30), completed with 1 local object.
 To github.com:chsasank/llama-scheme.git
    45155fc..fa9ab99  main -> main
 ```
+
+Dependencies so far:
+1. Chicken scheme
+2. Llama.c
+3. llama.cpp
+
+
+Need to create a nice build system for making bind
